@@ -1,0 +1,14 @@
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\bin\Debug\VideoIndaiatuba.exe.config
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\bin\Debug\VideoIndaiatuba.exe
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\bin\Debug\VideoIndaiatuba.pdb
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\bin\Debug\Interop.WMPLib.dll
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\bin\Debug\AxInterop.WMPLib.dll
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\VideoIndaiatuba.csprojResolveAssemblyReference.cache
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\Interop.WMPLib.dll
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\AxInterop.WMPLib.dll
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\VideoIndaiatuba.csproj.ResolveComReference.cache
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\VideoIndaiatuba.Home.resources
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\VideoIndaiatuba.Properties.Resources.resources
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\VideoIndaiatuba.csproj.GenerateResource.Cache
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\VideoIndaiatuba.exe
+Z:\OpenSource\VideoIndaiatuba\VideoIndaiatuba\obj\Debug\VideoIndaiatuba.pdb
