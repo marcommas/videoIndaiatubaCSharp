@@ -89,6 +89,12 @@ namespace VideoIndaiatuba
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
             //QUANDO VIDEO FOR PARADO
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPlaying )
+            {
+                axWindowsMediaPlayer1.fullScreen = true;
+            }
+
+            //QUANDO VIDEO FOR PARADO
             if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPaused)
             {
                 //O VIDEO FOI PARADO, PARA CONTINUAR PRECISA CLICAR EM OK
@@ -137,7 +143,6 @@ namespace VideoIndaiatuba
 
         private void btFechaPrograma_Click(object sender, EventArgs e)
         {
-
             if (obrigatorioSenha())
             {
                 if (tbSair.Text.ToString() == "master123")
@@ -152,9 +157,5 @@ namespace VideoIndaiatuba
                 }
             }
         }
-
-       
-    
-
     }
 }

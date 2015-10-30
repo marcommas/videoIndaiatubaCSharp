@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            this.btVideo1 = new System.Windows.Forms.Button();
             this.btVideo2 = new System.Windows.Forms.Button();
             this.btVideo3 = new System.Windows.Forms.Button();
             this.btVideo4 = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btFechar = new System.Windows.Forms.Button();
+            this.btVideo1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.pnSair.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,60 +51,58 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btVideo1
-            // 
-            this.btVideo1.Location = new System.Drawing.Point(185, 156);
-            this.btVideo1.Name = "btVideo1";
-            this.btVideo1.Size = new System.Drawing.Size(64, 64);
-            this.btVideo1.TabIndex = 0;
-            this.btVideo1.Text = "button1";
-            this.btVideo1.UseVisualStyleBackColor = true;
-            this.btVideo1.Click += new System.EventHandler(this.btVideo1_Click);
-            // 
             // btVideo2
             // 
-            this.btVideo2.Location = new System.Drawing.Point(386, 177);
+            this.btVideo2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVideo2.BackgroundImage")));
+            this.btVideo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btVideo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVideo2.Location = new System.Drawing.Point(416, 223);
             this.btVideo2.Name = "btVideo2";
-            this.btVideo2.Size = new System.Drawing.Size(75, 23);
+            this.btVideo2.Size = new System.Drawing.Size(250, 200);
             this.btVideo2.TabIndex = 1;
-            this.btVideo2.Text = "button2";
             this.btVideo2.UseVisualStyleBackColor = true;
             this.btVideo2.Click += new System.EventHandler(this.btVideo2_Click);
             // 
             // btVideo3
             // 
-            this.btVideo3.Location = new System.Drawing.Point(324, 360);
+            this.btVideo3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVideo3.BackgroundImage")));
+            this.btVideo3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btVideo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVideo3.Location = new System.Drawing.Point(101, 464);
             this.btVideo3.Name = "btVideo3";
-            this.btVideo3.Size = new System.Drawing.Size(75, 23);
+            this.btVideo3.Size = new System.Drawing.Size(250, 200);
             this.btVideo3.TabIndex = 2;
-            this.btVideo3.Text = "button3";
             this.btVideo3.UseVisualStyleBackColor = true;
             this.btVideo3.Click += new System.EventHandler(this.btVideo3_Click);
             // 
             // btVideo4
             // 
-            this.btVideo4.Location = new System.Drawing.Point(194, 476);
+            this.btVideo4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVideo4.BackgroundImage")));
+            this.btVideo4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btVideo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVideo4.Location = new System.Drawing.Point(416, 464);
             this.btVideo4.Name = "btVideo4";
-            this.btVideo4.Size = new System.Drawing.Size(64, 64);
+            this.btVideo4.Size = new System.Drawing.Size(250, 200);
             this.btVideo4.TabIndex = 3;
-            this.btVideo4.Text = "button4";
             this.btVideo4.UseVisualStyleBackColor = true;
             this.btVideo4.Click += new System.EventHandler(this.btVideo4_Click);
             // 
             // btVideo5
             // 
-            this.btVideo5.Location = new System.Drawing.Point(450, 476);
+            this.btVideo5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVideo5.BackgroundImage")));
+            this.btVideo5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btVideo5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVideo5.Location = new System.Drawing.Point(101, 708);
             this.btVideo5.Name = "btVideo5";
-            this.btVideo5.Size = new System.Drawing.Size(64, 64);
+            this.btVideo5.Size = new System.Drawing.Size(250, 200);
             this.btVideo5.TabIndex = 4;
-            this.btVideo5.Text = "button5";
             this.btVideo5.UseVisualStyleBackColor = true;
             this.btVideo5.Click += new System.EventHandler(this.btVideo5_Click);
             // 
             // axWindowsMediaPlayer1
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(22, 316);
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(384, 38);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(120, 158);
@@ -114,11 +112,13 @@
             // 
             // btVideo6
             // 
-            this.btVideo6.Location = new System.Drawing.Point(591, 473);
+            this.btVideo6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVideo6.BackgroundImage")));
+            this.btVideo6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btVideo6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVideo6.Location = new System.Drawing.Point(416, 708);
             this.btVideo6.Name = "btVideo6";
-            this.btVideo6.Size = new System.Drawing.Size(75, 23);
+            this.btVideo6.Size = new System.Drawing.Size(250, 200);
             this.btVideo6.TabIndex = 6;
-            this.btVideo6.Text = "button6";
             this.btVideo6.UseVisualStyleBackColor = true;
             this.btVideo6.Click += new System.EventHandler(this.btVideo6_Click);
             // 
@@ -146,6 +146,7 @@
             this.btfecharsair.TabIndex = 2;
             this.btfecharsair.Text = "X";
             this.btfecharsair.UseVisualStyleBackColor = false;
+            this.btfecharsair.Click += new System.EventHandler(this.btfecharsair_Click);
             // 
             // btFechaPrograma
             // 
@@ -158,6 +159,7 @@
             this.btFechaPrograma.TabIndex = 1;
             this.btFechaPrograma.Text = "Sair";
             this.btFechaPrograma.UseVisualStyleBackColor = false;
+            this.btFechaPrograma.Click += new System.EventHandler(this.btFechaPrograma_Click);
             // 
             // tbSair
             // 
@@ -172,9 +174,9 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::VideoIndaiatuba.Properties.Resources.brasao_indaiatuba;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(646, 703);
+            this.pictureBox3.Location = new System.Drawing.Point(646, 963);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(106, 117);
             this.pictureBox3.TabIndex = 17;
@@ -182,10 +184,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::VideoIndaiatuba.Properties.Resources.dengue;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.ErrorImage = global::VideoIndaiatuba.Properties.Resources.dengue;
-            this.pictureBox2.Location = new System.Drawing.Point(256, 722);
+            this.pictureBox2.Location = new System.Drawing.Point(256, 982);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(321, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,10 +195,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::VideoIndaiatuba.Properties.Resources.logo_do_sus;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::VideoIndaiatuba.Properties.Resources.logo_do_sus;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 734);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 994);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(209, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -207,7 +207,7 @@
             // btFechar
             // 
             this.btFechar.BackColor = System.Drawing.Color.Transparent;
-            this.btFechar.BackgroundImage = global::VideoIndaiatuba.Properties.Resources.fechar;
+            this.btFechar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btFechar.BackgroundImage")));
             this.btFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btFechar.FlatAppearance.BorderSize = 0;
             this.btFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -218,13 +218,25 @@
             this.btFechar.UseVisualStyleBackColor = false;
             this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
             // 
+            // btVideo1
+            // 
+            this.btVideo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVideo1.BackgroundImage")));
+            this.btVideo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btVideo1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btVideo1.Location = new System.Drawing.Point(101, 223);
+            this.btVideo1.Name = "btVideo1";
+            this.btVideo1.Size = new System.Drawing.Size(250, 200);
+            this.btVideo1.TabIndex = 0;
+            this.btVideo1.UseVisualStyleBackColor = true;
+            this.btVideo1.Click += new System.EventHandler(this.btVideo1_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(797, 832);
+            this.ClientSize = new System.Drawing.Size(797, 1092);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
