@@ -105,11 +105,6 @@ namespace VideoIndaiatuba
                 }
             }
 
-            //QUANDO O VIDEO ACABAR
-            /*if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
-            {
-                this.Hide();
-            }*/
         }
 
 
