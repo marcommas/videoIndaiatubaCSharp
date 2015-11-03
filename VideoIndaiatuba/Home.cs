@@ -9,16 +9,72 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
 using AxWMPLib;
+using System.IO;
 
 namespace VideoIndaiatuba
 {
     public partial class Home : Form
     {
+        private int idAudio;
+       
         public Home()
         {
             InitializeComponent();
+            PlayFile();
         }
 
+        /*
+         * PARA AUDIO
+         */
+        WMPLib.WindowsMediaPlayer Player;
+
+        private void PlayFile()
+        {
+            Player = new WMPLib.WindowsMediaPlayer();
+            Player.PlayStateChange +=
+                new WMPLib._WMPOCXEvents_PlayStateChangeEventHandler(Player_PlayStateChange);
+            Player.MediaError +=
+                new WMPLib._WMPOCXEvents_MediaErrorEventHandler(Player_MediaError);
+
+            Random random = new Random();
+            idAudio = Convert.ToInt32(random.Next(1, 3).ToString());
+
+            switch (idAudio)
+            {
+                case 1:
+                    Player.URL = "C:\\VideoIndaiatuba\\audio1.mp3";
+                    break;
+
+                case 2:
+                    Player.URL = "C:\\VideoIndaiatuba\\audio2.mp3";
+                    break;
+
+                default:
+                    Player.URL = "C:\\VideoIndaiatuba\\audio1.mp3";
+                    break;
+            }
+
+            Player.controls.play();
+        }
+
+
+        private void Player_PlayStateChange(int NewState)
+        {
+            if ((WMPLib.WMPPlayState)NewState == WMPLib.WMPPlayState.wmppsMediaEnded )
+            {
+                PlayFile();
+            }
+        }
+
+        private void Player_MediaError(object pMediaObject)
+        {
+            MessageBox.Show("Não foi possível abrir o audio.");
+        }
+
+
+        /*
+         * PARA VIDEO 
+         */
         private void btVideo1_Click(object sender, EventArgs e)
         {
             MostraVideo(1);
@@ -91,6 +147,8 @@ namespace VideoIndaiatuba
             //QUANDO VIDEO FOR PARADO
             if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsPlaying )
             {
+                //PARA O AUDIO DE FUNDO
+                Player.controls.stop();
                 axWindowsMediaPlayer1.fullScreen = true;
             }
 
@@ -105,6 +163,12 @@ namespace VideoIndaiatuba
                 }
             }
 
+            //VOLTA O AUDIO DE FUNDO
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded )
+            {
+                //Player.controls.play();
+                PlayFile();
+            }
         }
 
 
